@@ -1,0 +1,7 @@
+<div class="container">
+    <h3>Edit Todo #{{todo.id}}</h3>
+    <todo-form [todo]="todo"
+               (onSave)="onSave($event)"
+               (onCancel)="onCancel()">
+    </todo-form>
+</div>

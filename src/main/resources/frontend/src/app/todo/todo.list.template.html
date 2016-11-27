@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="nav navbar">
+        <a class="btn btn-default" routerLink="/todos/new">Add Todo</a>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Author</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let todo of todoList">
+            <td><a [routerLink]="['/todos', todo.id]">{{todo.id}}</a></td>
+            <td><a [routerLink]="['/todos', todo.id]">{{todo.name}}</a></td>
+            <td>{{todo.author}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
