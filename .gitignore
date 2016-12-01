@@ -4,3 +4,5 @@ target
 node_modules
 **/public/bundle.js
 **/public/index.html
+src/frontend/node
+src/frontend/etc

@@ -3,7 +3,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var config = {
     entry: './src/app.module.js',
     output: {
-        path: '../public/',
+        path: '../main/resources/public/',
         filename: "bundle.js"
     },
 
